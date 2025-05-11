@@ -1,17 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="sytle.css">
+  <script defer src="main.js"></script>
+  <title>Projects List </title>
 </head>
 <body>
 
-  <h1>Welcome to My Frontend Projects </h1>
-  <ul>
-    <li><a href="./Portfolio/">Portfolio</a></li>
-    <li><a href="./RealEstate/">Real Estate</a></li>
-  </ul>
+  <header class="topbar">
+    <a href="#" class="logo">
+      <img src="./imgs/logo.jpeg"  alt="logo" >
+      <span>Yaaqout Tareq</span>
+    </a>
   
+    <button class="icon-btn theme-btn" data-theme-btn>
+      <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+      <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+      <div class="state-layer"></div>
+    </button>
+  </header>
+  
+
+<!-- =================== #Animation ============= -->
+
+<div class="beam-container">
+
+
+  <svg id="beam-canvas"></svg>
+
+
+  <div class="layout">
+    <!-- Left Column -->
+    <div class="left-column" id="sources">
+      <div class="circle"><img src="./imgs/yaaqout.jpeg" alt=""></div>
+    </div>
+
+    <!-- Center Node -->
+    <div class="center-node">
+      <div class="circle center" id="center"> <img src="./imgs/github.svg" alt="github"></div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column" id="targets">
+      <div class="circle">
+        <img src="./imgs/html-5.svg" alt="html-5">
+      </div>
+      <div class="circle">
+      <img src="./imgs/css-3.svg" alt="css-3">
+      </div>
+      <div class="circle">
+        <img src="./imgs/javascript.svg" alt="javascript">
+      </div>
+      <div class="circle">
+      <img src="./imgs/typescript.svg" alt="typescript">
+      </div>
+      <div class="circle">
+        <img src="./imgs/bootstrap.svg" alt="bootstrap">
+      </div>
+      <div class="circle">
+        <img src="./imgs/tailwindcss.svg" alt="tailwindcss">
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- =========================== Table =========================== -->
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Portfolio</td>
+        <td><a href="./Portfolio/">Portfolio-View</a></td>
+      </tr>
+      <tr>
+        <td>Real Estate</td>
+        <td><a href="./RealEstate/">Real Estate-View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <!-- ==================== #FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="body-medium">Copyright 2025. All right reserved by Yaaqout Tareq</p>
+    </div>
+  </footer>
 </body>
 </html>
